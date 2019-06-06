@@ -16,30 +16,46 @@
     <h1 id="title">Sign Up For Coding Fun</h1>
     <div id="form-outer">
     <p id="description">Fill in the details of the form to start coding</p>
-    <form id="survey-form">
-      <label id="name-label" for="name">Name:</label>
-      <input name="name" type="text" id="name" placeholder="Enter your name" required>
-      <label for="email" id="email-label">Email:</label>
-      <input name="email" type="email" id="email" placeholder="Enter your email" required>
-      <label for="number" id="number-label">Age:</label>
-      <input name="number" type="number" id="number" placeholder="Your Age" min="1" max="25">
-      <label for="english-level" id="level-label">How well do you speak English?</label>
-      <select name="english-level" id="dropdown">
-        <option disabled value>Proficiency Level</option>
-        <option value="beginner">Beginner</option>
-        <option value="intermidiate">Intermidiate</option>
-        <option value="expert">Expert</option>
-      </select>
-      <label for="sex" id="sex-label">What sex are you?</label>
-      <label><input type="radio" name="sex-radio" value="1">Male</label>
-      <label><input type="radio" name="sex-radio" value="2">Female</label>
-      <label for="html" id="html-label"><input value="1" type="checkbox" name="html" id="html">HTML</label>
-      <label for="css" id="css-label"><input value="2" type="checkbox" name="css" id="css">CSS</label>
-      <label for="js" id="js-label"><input value="3" type="checkbox" name="js" id="js">JavaScript</label>
-      <label for="mysql" id="mysql-label"><input value="4" type="checkbox" name="mysql" id="mysql">MySQL</label>
-      <label for="comments" id="comments"></label>
-      <textarea name="comments" id="comment-box" placeholder="Enter your comment..." cols="30" rows="10"></textarea>
-      <button id="submit" type="submit">Submit</button>
+    <form id="survey-form" method="GET" action="">
+      <div class="formRow">
+          <label id="name-label" for="name">Name:</label>
+          <input name="name" type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="formRow">
+          <label for="email" id="email-label">Email:</label>
+          <input name="email" type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="formRow">
+          <label for="number" id="number-label">Age:</label>
+          <input name="number" type="number" id="number" placeholder="Your Age" min="1" max="25">
+      </div>
+      <div class="formRow">
+          <label for="english-level" id="level-label">How well do you speak English?</label>
+          <select name="english-level" id="dropdown">
+            <option disabled value>Proficiency Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermidiate">Intermidiate</option>
+            <option value="expert">Expert</option>
+          </select>
+      </div>
+      <div class="formRow">
+          <label for="sex" id="sex-label">What sex are you?</label>
+          <label><input type="radio" name="sex-radio" value="1">Male</label>
+          <label><input type="radio" name="sex-radio" value="2">Female</label>
+      </div>
+      <div class="formRow">
+          <label for="html" id="html-label"><input value="1" type="checkbox" name="html" id="html">HTML</label>
+          <label for="css" id="css-label"><input value="2" type="checkbox" name="css" id="css">CSS</label>
+          <label for="js" id="js-label"><input value="3" type="checkbox" name="js" id="js">JavaScript</label>
+          <label for="mysql" id="mysql-label"><input value="4" type="checkbox" name="mysql" id="mysql">MySQL</label>
+      </div>
+      <div class="formRow">
+          <label for="comments" id="comments"></label>
+          <textarea name="comments" id="comment-box" placeholder="Enter your comment..." cols="30" rows="10"></textarea>
+      </div>
+      <div class="formRow">
+          <button id="submit" type="submit">Submit</button>
+      </div>
     </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
