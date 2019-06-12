@@ -14,3 +14,7 @@ main {
 .formRow {
     margin: 1.5em auto;
 }
+
+#pLang {
+    list-style-type: none;
+}

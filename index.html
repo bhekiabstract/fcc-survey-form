@@ -18,40 +18,80 @@
     <p id="description">Fill in the details of the form to start coding</p>
     <form id="survey-form" method="GET" action="">
       <div class="formRow">
-          <label id="name-label" for="name">Name:</label>
-          <input name="name" type="text" id="name" placeholder="Enter your name" required>
+          <div class="labelLeft">
+                <label id="name-label" for="name">Name:</label>
+          </div>
+          <div class=selectRight>
+                <input name="name" type="text" id="name" placeholder="Enter your name" required>
+          </div>
       </div>
       <div class="formRow">
-          <label for="email" id="email-label">Email:</label>
-          <input name="email" type="email" id="email" placeholder="Enter your email" required>
+          <div class="labelLeft">
+                <label for="email" id="email-label">Email:</label>
+          </div>
+          <div class="selectRight">
+                <input name="email" type="email" id="email" placeholder="Enter your email" required>
+          </div>
       </div>
       <div class="formRow">
-          <label for="number" id="number-label">Age:</label>
-          <input name="number" type="number" id="number" placeholder="Your Age" min="1" max="25">
+          <div class="labelLeft">
+                <label for="number" id="number-label">Age:</label>
+          </div>
+          <div class="selectRight">
+                <input name="number" type="number" id="number" placeholder="Your Age" min="1" max="25">
+          </div>
       </div>
       <div class="formRow">
-          <label for="english-level" id="level-label">How well do you speak English?</label>
-          <select name="english-level" id="dropdown">
-            <option disabled value>Proficiency Level</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermidiate">Intermidiate</option>
-            <option value="expert">Expert</option>
-          </select>
+          <div class="labelLeft">
+                <label for="english-level" id="level-label">How well do you speak English?</label>
+          </div>
+          <div class="selectRight">
+                <select name="english-level" id="dropdown">
+                        <option disabled value>Proficiency Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermidiate">Intermidiate</option>
+                        <option value="expert">Expert</option>
+                      </select>
+          </div>
       </div>
       <div class="formRow">
-          <label for="sex" id="sex-label">What sex are you?</label>
-          <label><input type="radio" name="sex-radio" value="1">Male</label>
-          <label><input type="radio" name="sex-radio" value="2">Female</label>
+          <div class="labelLeft">
+                <label for="sex" id="sex-label">What is your sex?</label>
+          </div>
+          <div class="selectRight">
+                <label><input type="radio" name="sex-radio" value="1">Male</label>
+                <label><input type="radio" name="sex-radio" value="2">Female</label>
+                <label><input type="radio" name="sex-radio" value="3">Other</label>
+            </div>
       </div>
       <div class="formRow">
-          <label for="html" id="html-label"><input value="1" type="checkbox" name="html" id="html">HTML</label>
-          <label for="css" id="css-label"><input value="2" type="checkbox" name="css" id="css">CSS</label>
-          <label for="js" id="js-label"><input value="3" type="checkbox" name="js" id="js">JavaScript</label>
-          <label for="mysql" id="mysql-label"><input value="4" type="checkbox" name="mysql" id="mysql">MySQL</label>
+          <div class="labelLeft">
+                <label for="pLang"> What do you wish to learn?</label>
+          </div>
+          <div class="selectRight">
+                <ul id="pLang">
+                        <li>
+                              <label for="html" id="html-label"><input value="1" type="checkbox" name="choice" id="html">HTML</label>
+                        </li>
+                        <li>
+                              <label for="css" id="css-label"><input value="2" type="checkbox" name="choice" id="css">CSS</label>
+                          </li>
+                        <li>
+                              <label for="js" id="js-label"><input value="3" type="checkbox" name="choice" id="js">JavaScript</label>
+                        </li>
+                        <li>
+                              <label for="mysql" id="mysql-label"><input value="4" type="checkbox" name="choice" id="mysql">MySQL</label>
+                        </li>
+                    </ul>
+          </div> 
       </div>
       <div class="formRow">
-          <label for="comments" id="comments">Comments</label>
-          <textarea name="comments" id="comment-box" placeholder="Enter your comment..." cols="30" rows="10"></textarea>
+          <div class="labelLeft">
+                <label for="comments" id="comments">Comments</label>
+          </div>
+          <div class="selectRight">
+                <textarea name="comments" id="comment-box" placeholder="Enter your comment..." cols="30" rows="10"></textarea>
+          </div>
       </div>
       <div class="formRow">
           <button id="submit" type="submit">Submit</button>
