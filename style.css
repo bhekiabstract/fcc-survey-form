@@ -1,10 +1,11 @@
 body {
     font-family: 'Karla', sans-serif;
     font-size: 1.05em;
+    text-align: center;
 }
 
 main { 
-    text-align: center;
+    
 }
 
 #title {
@@ -15,6 +16,33 @@ main {
     margin: 1.5em auto;
 }
 
+.labelLeft {
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 0.5%;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.selectRight {
+    width: 48%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.singleLine {
+    height: 25px;
+    width: 250px;
+}
+
+#dropdown {
+    height: 30px;
+}
+
 #pLang {
     list-style-type: none;
+    margin-top: 3px;
+    padding-left: 0;
 }
