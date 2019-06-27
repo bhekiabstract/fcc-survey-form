@@ -4,10 +4,6 @@ body {
     text-align: center;
 }
 
-main { 
-    
-}
-
 #title {
     font-family: 'Open Sans', sans-serif;
 }
@@ -55,5 +51,7 @@ main {
 
     .selectRight {
         width: 100%;
+        margin-top: 5px;
     }
+
 }
