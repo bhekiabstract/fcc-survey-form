@@ -46,3 +46,14 @@ main {
     margin-top: 3px;
     padding-left: 0;
 }
+
+@media screen and (max-width: 650px) {
+    .labelLeft {
+        width: 100%;
+        text-align: left;
+    }
+
+    .selectRight {
+        width: 100%;
+    }
+}
